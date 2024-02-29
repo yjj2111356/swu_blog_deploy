@@ -36,7 +36,7 @@ public class RESTApiController {
     }
 
     // 상태코드까지 함께 리턴할 수 있는 ResponseEntity<> 를 리턴자료형으로 지정.
-    @GetMapping("/person-list")
+    @GetMapping("/movie-list")
     public ResponseEntity<?> personList(){
         PersonDTO p = PersonDTO.builder().id(1L).title("범죄도시2").spectator(12693415).build();
         PersonDTO p2 = PersonDTO.builder().id(2L).title("아바타: 물의 길").spectator(10805065).build();
