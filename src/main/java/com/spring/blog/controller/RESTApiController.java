@@ -31,7 +31,7 @@ public class RESTApiController {
 
     @RequestMapping(value = "/person", method = RequestMethod.GET)
     public PersonDTO person(){
-        PersonDTO p = PersonDTO.builder().id(1L).name("좋코더").age(20).build();
+        PersonDTO p = PersonDTO.builder().id(1L).title("좋코더").spectator(20).build();
         return p;
     }
 
